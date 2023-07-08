@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  node:
+    build: .
+    ports:
+      - 8081:8081
+    volumes:
+      - .:/usr/app
+    command: npx nodemon app.js
